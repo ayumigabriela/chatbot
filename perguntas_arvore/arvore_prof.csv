@@ -1,0 +1,20 @@
+ID;Pergunta;A;Nó A;B;Nó B
+1;Boa circulação?;SIM;2;NÃO;3
+2;Artérias bloqueadas?;SIM;4;NÃO;5
+3;Dor no peito?;SIM;6;NÃO;7
+4;Dor no peito?;SIM;8;NÃO;9
+5;NÓ FOLHA;Média propensão à doenças cardíacas;;;
+6;NÓ FOLHA;Alta propensão à doenças cardíacas;;;
+7;Artérias bloqueadas?;SIM;10;NÃO;11
+8;NÓ FOLHA;Média propensão à doenças cardíacas;;;
+9;NÓ FOLHA;Baixa propensão à doenças cardíacas;;;
+10;NÓ FOLHA;Baixa propensão à doenças cardíacas;;;
+11;NÓ FOLHA;Baixa propensão à doenças cardíacas;;;
+
+deleted:    arvorefinal.csv
+deleted:    aula.py
+modified:   aula_sklearn.py
+new file:   perguntas_arvore/arvore_prof.csv
+new file:   perguntas_arvore/arvorefinal.csv
+new file:   perguntas_arvore/perguntas.py
+new file:   perguntas_arvore/prof_perguntas.py
