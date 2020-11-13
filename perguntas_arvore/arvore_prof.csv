@@ -10,11 +10,3 @@ ID;Pergunta;A;Nó A;B;Nó B
 9;NÓ FOLHA;Baixa propensão à doenças cardíacas;;;
 10;NÓ FOLHA;Baixa propensão à doenças cardíacas;;;
 11;NÓ FOLHA;Baixa propensão à doenças cardíacas;;;
-
-deleted:    arvorefinal.csv
-deleted:    aula.py
-modified:   aula_sklearn.py
-new file:   perguntas_arvore/arvore_prof.csv
-new file:   perguntas_arvore/arvorefinal.csv
-new file:   perguntas_arvore/perguntas.py
-new file:   perguntas_arvore/prof_perguntas.py

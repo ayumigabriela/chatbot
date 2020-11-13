@@ -21,17 +21,12 @@ texto = pd.read_csv('arvorefinal.csv',sep=';',index_col="ID")
 
 def rec_build_tree(linha):
     row = texto.loc[linha]
+    #print(row)
     if row["Pergunta"] == "no FOLHA":
         return row["A"]
     node = Tree()
-    try:
-        node.leftNode = rec_build_tree(int(row["Nó A"]))
-    except:
-        pass
-    try:
-        node.rightNode = rec_build_tree(int(row["Nó B"]))
-    except:
-        pass
+    node.leftNode = rec_build_tree(int(row["Nó A"]))
+    node.rightNode = rec_build_tree(int(row["Nó B"]))
     node.question = row["Pergunta"]
     node.answerTrue = row["A"]
     node.answerFalse = row["B"]
@@ -50,7 +45,7 @@ while True:
             print("\nMuitas informações! :/ \nPor favor me reinicie.")
             break
         opcoes = {1:arvore.answerTrue,2:arvore.answerFalse}
-        print("\nEscolha uma das opções abaixo:"+"\n0 para sair"+"\n1 para SIM"+"\n2 para NAO""\n")
+        print("\nEscolha uma das opções abaixo:"+"\n0 para sair"+"\n1 para "+opcoes[1]+"\n2 para "+opcoes[2]+"\n")
         response = input(arvore.ask_question())
         while not response.isnumeric():
             if count_erros == 2:
